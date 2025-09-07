@@ -5,7 +5,7 @@ import axios from 'axios';
 import TextField from '@mui/material/TextField';
 import { Select,MenuItem,FormControl, FormHelperText, Button, InputLabel } from '@mui/material';
 import { Controller } from 'react-hook-form';
-const apiUrl = import.meta.env.VITE_API_URL;
+const apiUrl = import.meta.env.MODE === "development" ? "http://localhost:5000" : import.meta.env.VITE_API_URL;
 
 const Contact = () => {
   const {
