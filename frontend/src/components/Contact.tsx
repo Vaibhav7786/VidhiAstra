@@ -78,8 +78,8 @@ const Contact = () => {
             
             <div className="space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="bg-blue-900 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0">
+                <div key={index} className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 group">
+                  <div className="bg-blue-900 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-500 transition-all duration-300 transform group-hover:rotate-12">
                     <info.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -92,7 +92,7 @@ const Contact = () => {
               ))}
             </div>
 
-            <div className="mt-8 bg-blue-50 rounded-lg p-6">
+            <div className="mt-8 bg-blue-50 rounded-lg p-6 hover:bg-blue-100 transition-all duration-300 transform hover:scale-105">
               <h4 className="text-lg font-semibold text-blue-900 mb-2">Emergency Contact</h4>
               <p className="text-blue-700">For urgent legal matters, call us 24/7 at:</p>
               <div className="flex items-center space-x-4 mt-3">
@@ -214,7 +214,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <Button type='submit' variant="contained" color="primary" size="large" startIcon={<Send />} className="bg-amber-500 hover:bg-amber-600">
+                <Button type='submit' variant="contained" color="primary" size="large" startIcon={<Send />} className="bg-amber-500 hover:bg-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                   Send Message
                 </Button>
               </div>

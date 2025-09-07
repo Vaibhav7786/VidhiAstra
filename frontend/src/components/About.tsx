@@ -102,12 +102,12 @@ const About = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <div key={index} className="text-center group transform hover:scale-110 transition-all duration-300">
+              <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-amber-500 group-hover:shadow-xl transition-all duration-300 transform group-hover:rotate-12">
                 <stat.icon className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-blue-900 mb-2">{stat.value}</div>
-              <div className="text-gray-600 font-medium">{stat.label}</div>
+              <div className="text-3xl font-bold text-blue-900 mb-2 group-hover:text-amber-600 transition-colors duration-300">{stat.value}</div>
+              <div className="text-gray-600 font-medium group-hover:text-gray-800 transition-colors duration-300">{stat.label}</div>
             </div>
           ))}
         </div>

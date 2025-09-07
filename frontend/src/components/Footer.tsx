@@ -9,16 +9,16 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <Scale className="h-8 w-8 text-amber-500" />
-              <span className="text-2xl font-bold">Vidhi Astra</span>
+            <div className="flex items-center space-x-2 mb-6 cursor-pointer transform hover:scale-105 transition-all duration-300">
+              <Scale className="h-8 w-8 text-amber-500 hover:text-amber-400 transition-colors duration-300 transform hover:rotate-12" />
+              <span className="text-2xl font-bold hover:text-amber-500 transition-colors duration-300">Vidhi Astra</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed max-w-md">
               Providing exceptional legal services with integrity, expertise, and unwavering commitment 
               to justice. Your trusted legal partner for all your legal needs.
             </p>
-            <div className="flex items-center space-x-4">
-              <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center">
+            <div className="flex items-center space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group">
+              <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-amber-500 transition-all duration-300 transform group-hover:rotate-12">
                 <MapPin className="h-6 w-6 text-white" />
               </div>
               <div>
@@ -48,14 +48,14 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-6">Contact Info</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-amber-500" />
+              <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group">
+                <Phone className="h-5 w-5 text-amber-500 group-hover:text-amber-400 transition-colors duration-300" />
                 <a href="tel:+919425334391" className="text-gray-300 hover:text-white transition-colors">
                   +91  94253 34391
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-amber-500" />
+              <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group">
+                <Mail className="h-5 w-5 text-amber-500 group-hover:text-amber-400 transition-colors duration-300" />
                 <a href="mailto:shubhampatidar5555@gmail.com" className="text-gray-300 hover:text-white transition-colors">
                   shubhampatidar5555@gmail.com
                 </a>

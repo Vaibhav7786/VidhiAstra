@@ -35,9 +35,9 @@ const Header = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
-            <Scale className={`h-8 w-8 ${isScrolled ? 'text-blue-900' : 'text-white'}`} />
-            <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
+          <div className="flex items-center space-x-2 cursor-pointer transform hover:scale-105 transition-all duration-300">
+            <Scale className={`h-8 w-8 ${isScrolled ? 'text-blue-900' : 'text-white'} hover:text-amber-500 transition-colors duration-300`} />
+            <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-900' : 'text-white'} hover:text-amber-500 transition-colors duration-300`}>
               Vidhi Astra
             </span>
           </div>
@@ -57,13 +57,13 @@ const Header = () => {
           </nav>
 
           <button
-            href="tel:+919425334391"
             onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 hover:bg-opacity-20 transition-all duration-300 transform hover:scale-110"
           >
             {isOpen ? (
-              <X className={`h-6 w-6 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
+              <X className={`h-6 w-6 ${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-amber-500 transition-colors duration-300`} />
             ) : (
-              <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-700' : 'text-white'}`} />
+              <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-amber-500 transition-colors duration-300`} />
             )}
           </button>
         </div>
