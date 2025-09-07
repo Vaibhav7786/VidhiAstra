@@ -36,6 +36,7 @@ app.use(express.json());
 
 // Serve static files
 app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/api/admin', authRoutes);
