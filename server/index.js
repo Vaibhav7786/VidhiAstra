@@ -24,7 +24,14 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://cc28a91f-adb9-4940-a084-00adc71723e4-00-2moxppmayxvnj.worf.replit.dev',
+    'http://localhost:5000',
+    'https://localhost:5000'
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Serve static files
@@ -43,4 +50,4 @@ app.get('/', (req, res) => {
 
 // Server listen
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, '127.0.0.1', () => console.log(`🚀 Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server started on port ${PORT}`));
