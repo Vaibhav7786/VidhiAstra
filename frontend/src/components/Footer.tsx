@@ -1,5 +1,6 @@
 import React from 'react';
 import { Scale, MapPin, Phone, Mail } from 'lucide-react';
+import { FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,7 +18,10 @@ const Footer = () => {
               Providing exceptional legal services with integrity, expertise, and unwavering commitment 
               to justice. Your trusted legal partner for all your legal needs.
             </p>
-            <div className="flex items-center space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group">
+            <div 
+              className="flex items-center space-x-4 p-4 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group cursor-pointer"
+              onClick={() => window.open('https://maps.app.goo.gl/xYhXAL9LR2bK43dZ7', '_blank')}
+            >
               <div className="bg-blue-800 rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-amber-500 transition-all duration-300 transform group-hover:rotate-12">
                 <MapPin className="h-6 w-6 text-white" />
               </div>
@@ -50,8 +54,8 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group">
                 <Phone className="h-5 w-5 text-amber-500 group-hover:text-amber-400 transition-colors duration-300" />
-                <a href="tel:+919425334391" className="text-gray-300 hover:text-white transition-colors">
-                  +91  94253 34391
+                <a href="tel:+917024018201" className="text-gray-300 hover:text-white transition-colors">
+                  +91 70240 18201
                 </a>
               </div>
               <div className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 group">
@@ -63,6 +67,27 @@ const Footer = () => {
             </div>
 
             <div className="mt-6">
+              <h4 className="font-semibold mb-3">Follow Us</h4>
+              <div className="flex space-x-4 mb-4">
+                <a 
+                  href="https://www.instagram.com/salaahlelo_official?utm_source=ig_web_button_share_sheet&igsh=N3Z5ZW02czZocTAx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 p-2 rounded-full hover:scale-110 transition-all duration-300 shadow-lg"
+                  title="Follow us on Instagram"
+                >
+                  <FaInstagram className="h-5 w-5 text-white" />
+                </a>
+                <a 
+                  href="https://youtube.com/@salaahlelo?si=olrRQAN2HYBSa88q"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-red-600 p-2 rounded-full hover:scale-110 transition-all duration-300 shadow-lg hover:bg-red-700"
+                  title="Subscribe to our YouTube channel"
+                >
+                  <FaYoutube className="h-5 w-5 text-white" />
+                </a>
+              </div>
               <h4 className="font-semibold mb-2">Office Hours</h4>
               <p className="text-gray-300 text-sm">Mon-Fri: 9:00 AM - 6:00 PM</p>
               <p className="text-gray-300 text-sm">Sat: 10:00 AM - 2:00 PM</p>
