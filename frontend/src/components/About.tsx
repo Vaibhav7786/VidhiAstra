@@ -91,11 +91,11 @@ const About = () => {
     <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
             About Vidhi Astra
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
              Vidhi Astra was founded with the vision of providing professional legal services that are accessible, transparent, and result-oriented. Our team of advocates represent clients before the Supreme Court of India, High Courts, District Courts, and Tribunals across the country. We strongly believe in building client relationships based on trust, ethics, and commitment to justice. Our Core Values Commitment to Justice Confidentiality & Integrity Professional Excellence Client-Centric Approach.
           </p>
         </div>
@@ -168,7 +168,7 @@ const About = () => {
             </div>
             
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-gray-900 mb-2">
+              <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
                 {teamMembers[currentTeamIndex].name}
               </h4>
               <p className="text-blue-900 font-semibold mb-2">
@@ -180,7 +180,7 @@ const About = () => {
               <p className="text-sm text-gray-500 mb-4">
                 Experience: {teamMembers[currentTeamIndex].experience}
               </p>
-              <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto transition-colors duration-300">
                 {teamMembers[currentTeamIndex].description}
               </p>
             </div>
@@ -234,13 +234,13 @@ const About = () => {
             </div>
             
             <div className="text-center">
-              <h4 className="text-2xl font-bold text-gray-900 mb-2">
+              <h4 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
                 {partnerCompanies[currentPartnerIndex].name}
               </h4>
               <p className="text-blue-900 font-semibold mb-4">
                 {partnerCompanies[currentPartnerIndex].type}
               </p>
-              <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl mx-auto transition-colors duration-300">
                 {partnerCompanies[currentPartnerIndex].description}
               </p>
             </div>

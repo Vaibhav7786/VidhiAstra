@@ -45,11 +45,11 @@ const Services = () => {
     <section id="services" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
             Our Legal Services
           </h2>
           <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
             Comprehensive legal solutions tailored to meet your specific needs with expertise and dedication
           </p>
         </div>
@@ -58,23 +58,23 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
+              className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group"
             >
               <div className="bg-blue-900 rounded-full w-16 h-16 flex items-center justify-center mb-6 group-hover:bg-amber-500 transition-colors duration-300">
                 <service.icon className="h-8 w-8 text-white" />
               </div>
               
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed transition-colors duration-300">
                 {service.description}
               </p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center text-gray-700">
+                  <li key={idx} className="flex items-center text-gray-700 dark:text-gray-300 transition-colors duration-300">
                     <div className="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
                     {feature}
                   </li>
