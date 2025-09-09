@@ -5,10 +5,11 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const legalImages = [
+    '/attached_assets/generated_images/Professional_Indian_lawyer_courtroom_338efae6.png',
+    '/attached_assets/generated_images/Legal_team_conference_meeting_31cb343f.png',
+    '/attached_assets/generated_images/Senior_advocate_with_books_548d4c03.png',
     '/attached_assets/generated_images/Professional_law_office_interior_6bd0f78f.png',
     '/attached_assets/generated_images/Indian_Supreme_Court_building_2b0075b5.png',
-    '/attached_assets/generated_images/Legal_document_signing_scene_b01ef3cf.png',
-    '/attached_assets/generated_images/Indian_courtroom_interior_scene_e1122f8e.png',
     '/attached_assets/generated_images/Family_law_consultation_scene_0a3580c0.png'
   ];
 
@@ -17,7 +18,7 @@ const Hero = () => {
       setCurrentImageIndex((prevIndex) => 
         prevIndex === legalImages.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // Change image every 4 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, [legalImages.length]);

@@ -75,18 +75,18 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 transition-colors duration-300">Contact Information</h3>
             
             <div className="space-y-8">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-50 transition-all duration-300 transform hover:scale-105 group">
+                <div key={index} className="flex items-start space-x-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 group">
                   <div className="bg-blue-900 rounded-full w-12 h-12 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-500 transition-all duration-300 transform group-hover:rotate-12">
                     <info.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-2">{info.title}</h4>
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300">{info.title}</h4>
                     {info.details.map((detail, idx) => (
-                      <p key={idx} className="text-gray-600">{detail}</p>
+                      <p key={idx} className="text-gray-600 dark:text-gray-300 transition-colors duration-300">{detail}</p>
                     ))}
                   </div>
                 </div>
@@ -114,12 +114,12 @@ const Contact = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Send Us a Message</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 transition-colors duration-300">Send Us a Message</h3>
             
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                     Full Name *
                   </label>
                   <TextField
@@ -133,7 +133,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                     Phone Number *
                   </label>
                   <TextField
@@ -148,7 +148,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                   Email Address *
                 </label>
                 <TextField
@@ -163,7 +163,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                   Legal Matter Type *
                 </label>
                 <Controller
@@ -198,7 +198,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                   Message *
                 </label>
                 <TextField
