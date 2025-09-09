@@ -97,11 +97,11 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-blue-900 mb-2">Emergency Contact</h4>
               <p className="text-blue-700">For urgent legal matters, call us 24/7 at:</p>
               <div className="flex items-center space-x-4 mt-3">
-                <a href="tel:+917024018201" className="text-xl font-bold text-blue-900 dark:text-white hover:text-amber-600 transition-colors">
-                  +91 70240 18201
+                <a href="tel:+919425334391" className="text-xl font-bold text-blue-900 dark:text-white hover:text-amber-600 transition-colors">
+                  +91 94253 34391
                 </a>
                 <a 
-                  href="https://wa.me/917024018201?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20legal%20services"
+                  href="https://wa.me/919425334391?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20legal%20services"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full transition-all duration-300 transform hover:scale-110 shadow-lg"
