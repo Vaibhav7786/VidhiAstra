@@ -171,27 +171,26 @@ const Contact = () => {
                   rules={{ required: "Please select a legal matter" }}
                   render={({ field }) => (
                     <FormControl fullWidth error={!!errors.subject}>
-                      <InputLabel id="subject-label">Select a legal matter</InputLabel>
+                      <InputLabel id="subject-label">Legal Matter Type</InputLabel>
                       <Select
                         {...field}
                         labelId="subject-label"
+                        label="Legal Matter Type"
                         value={field.value || ""}
                         onChange={(e) => field.onChange(e.target.value)}
+                        displayEmpty={false}
                       >
-                        <MenuItem value="">
-                          <em>None</em>
-                        </MenuItem>
-                        <MenuItem value="corporate">Corporate Law</MenuItem>
+                        <MenuItem value="service">Service Matters</MenuItem>
                         <MenuItem value="property">Property Law</MenuItem>
-                        <MenuItem value="family">Family Law</MenuItem>
+                        <MenuItem value="family">Family & Matrimonial Law</MenuItem>
                         <MenuItem value="civil">Civil Litigation</MenuItem>
+                        <MenuItem value="arbitration">Arbitration & ADR</MenuItem>
                         <MenuItem value="criminal">Criminal Defense</MenuItem>
-                        <MenuItem value="documentation">Legal Documentation</MenuItem>
-                        <MenuItem value="other">Other</MenuItem>
+                        <MenuItem value="other">Other Legal Matters</MenuItem>
                       </Select>
-                      {/* {errors.subject && (
-                        // <FormHelperText>{errors?.subject?.message}</FormHelperText>
-                      )} */}
+                      {errors.subject && (
+                        <FormHelperText>{errors.subject.message as string}</FormHelperText>
+                      )}
                     </FormControl>
                   )}
                 />
